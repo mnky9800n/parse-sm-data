@@ -1,7 +1,5 @@
 <?php
 
-//eat me
-
 // we need the names of an input file and two output files
 if ( $argc < 3 )
 	die( "Not all needed file names were provided." );
@@ -12,6 +10,7 @@ if ( $argc < 3 )
 $resultsFileName = $argv[1];
 $respondentFileName = $argv[2];
 $answerFileName = $argv[3];
+$whereToBreak = $argv[4];
 
 // open our files and check the handles
 $resultsFile = fopen( $resultsFileName, "r" );
@@ -27,7 +26,7 @@ if ( !$respondentFile || !$answerFile )
 $resultsLine = fgetcsv( $resultsFile );
 
 // in the results file, answers begin after 10 fields
-$answersOffset = 32;
+$answersOffset = $whereToBreak;
 
 // for each line of the answers file, we will do this:
 while ( $resultsLine = fgetcsv( $resultsFile ) )
