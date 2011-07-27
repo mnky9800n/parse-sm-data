@@ -1,0 +1,8 @@
+To use, place program in directory of file needing parsed.  Open 
+command prompt at that directory and type:
+
+php -f <parse_answers.php> -- <fileNeededToBeParsed.csv> <RespondentParsedData.csv> <AnswersParsedData.csv> <N>
+
+Where <N> is in integer number and is where to break the original file into the <RespondentParsedData.csv> and the <AnswersParsedData.csv>.
+
+You must have php installed on your system.
