@@ -1,5 +1,7 @@
 <?php
 
+//eat me
+
 // we need the names of an input file and two output files
 if ( $argc < 3 )
 	die( "Not all needed file names were provided." );
