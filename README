@@ -1,3 +1,5 @@
+This program will split the CSV file that you download from Survey Monkey into two files to upload into the database.  It will take the Respondent data and split that from the answer data then it will take the answer data and transpose it and add the corresponding RespondentID to each row.
+
 To use, place program in directory of file needing parsed.  Open 
 command prompt at that directory and type:
 
